@@ -20,7 +20,9 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "pages/_app.jsx"
+    "pages/_app.jsx",
+    "test/pages/index.test.tsxXXXXXX",
+    "test/pages/index.test.tsxXXXX"
   ],
   "paths": {
     "@styles": ["styles"]
