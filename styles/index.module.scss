@@ -1,6 +1,10 @@
 .body {
-  background: var(--main-bg-color);
   cursor: pointer;
   width: auto;
   height: auto;
+  font-family: var(--space-mono-font);
+}
+
+.test {
+  font-family: var(--roboto-font);
 }
