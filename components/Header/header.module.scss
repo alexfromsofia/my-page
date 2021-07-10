@@ -1,0 +1,13 @@
+@import 'styles/mixins';
+
+.outer {
+  background: var(--cultured);
+}
+
+.container {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+}

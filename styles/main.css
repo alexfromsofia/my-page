@@ -33,10 +33,50 @@
   font-style: normal;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 :root {
   --main-bg-color: brown;
   --space-mono-font: 'SpaceMono', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Helvetica Neue', Arial, sans-serif;
   --roboto-font: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Helvetica Neue', Arial, sans-serif;
+  /* Colors */
+  --text-color: #000;
+  /* Color Scheme Start https://coolors.co/eef0f2-c6c7c4-a2999e-846a6a-353b3c */
+  --cultured: #eef0f2;
+  --silver: #c6c7c4;
+  --spanish-gray: #a2999e;
+  --deep-taupe: #846a6a;
+  --onyx: #353b3c;
+  /* Color Scheme End */
+  /* Layout */
+  --max-width: 1280px;
+  --nav-height: 100px;
+  /* Layout */
+  /* Spacing */
+  --spacing: 8px;
+  --spacing2x: calc(var(--spacing) * 2);
+  --spacing3x: calc(var(--spacing) * 3);
+  --spacing4x: calc(var(--spacing) * 4);
+  --spacing5x: calc(var(--spacing) * 5);
+  --spacing6x: calc(var(--spacing) * 6);
+  --spacing7x: calc(var(--spacing) * 7);
+  --spacing8x: calc(var(--spacing) * 8);
+  --spacing9x: calc(var(--spacing) * 9);
+  --spacing10x: calc(var(--spacing) * 10);
+  /* Spacing */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--roboto-font);
 }

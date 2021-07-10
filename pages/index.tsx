@@ -1,25 +1,20 @@
-import { GetStaticProps } from 'next'
-import { createClient } from 'contentful'
+import Banner from 'components/Banner/Banner'
+import { GetServerSideProps } from 'next'
 import styles from 'styles/index.module.scss'
+import { getContentfulData, isMobile } from 'utils/common'
 
-export const getStaticProps: GetStaticProps = async () => {
-  const client = createClient({
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-    space: process.env.CONTENTFUL_SPACE_ID,
-  })
-
-  const res = await client.getEntries()
-
-  return {
-    props: res,
-  }
-}
+export const getServerSideProps: GetServerSideProps = async (context) => ({
+  props: {
+    isMobile: isMobile(context),
+    content: await getContentfulData(),
+  },
+})
 
 export const Home = (): JSX.Element => {
   return (
-    <div className="container">
+    <div className={styles.container}>
+      <Banner />
       <div className={styles.body}></div>
-      <div className={styles.test}></div>
     </div>
   )
 }

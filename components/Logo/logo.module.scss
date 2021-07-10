@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: var(--onyx);
+  font-family: var(--space-mono-font);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.position {
+  font-size: 14px;
+  font-weight: 100;
+}
